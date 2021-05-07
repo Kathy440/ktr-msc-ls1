@@ -14,22 +14,17 @@
                         <a class="nav-link active">
                             <i class="fas fa-user"></i>User Profile
                         </a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a href="/profil-list" class="nav-link active">Profile</a>
-                    </li>
+                        <li class="nav-item">
+                            <!--                         <a routerLink="/customers" class="active nav-link active" role="button" routerLinkActive="active">Customers</a>
+ --><a routerLink="/add" class="active nav-link active" role="button" routerLinkActive="active">Add</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a routerLink="/customers" class="active nav-link active" role="button" routerLinkActive="active">Customers</a>
-                        <a routerLink="/add" class="active nav-link active" role="button" routerLinkActive="active">Add</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" (click)="ngAuthService.SignOut()">
-                            <i class="fas fa-sign-out-alt"></i>Log out
-                        </a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="ngAuthService.SignOut()">
+                                <i class="fas fa-sign-out-alt"></i>Log out
+                            </a>
+                        </li>
                 </ul>
             </div>
         </nav>
