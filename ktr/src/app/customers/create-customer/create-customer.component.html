@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">email</label>
                     <input type="text" class="form-control" id="email" required [(ngModel)]="customer.email" name="email">
                 </div>
 
@@ -35,22 +35,28 @@
     </div>
 </div>
 
-<table class="table table-bordered table-striped table-hover">
-    <thead>
-        <tr>
-            <th class="text-center">ID</th>
-            <th class="text-center">First Name</th>
-            <th class="text-center">Last Name</th>
-            <th class="text-center">&nbsp;</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let customer of customers">
-            <td>{{ customer.id }}</td>
-            <td>{{ customer.name }}</td>
-            <td>{{ customer.email }}</td>
+<div class="row justify-content-md-center">
+    <div class="col-12">
+        <table class="table table-bordered table-striped table-hover mt-5">
+            <thead>
+                <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">name</th>
+                    <th class="text-center">email</th>
+                    <th class="text-center">number</th>
+                    <th class="text-center">companyName</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let customer of customers">
+                    <td>{{ customer.id }}</td>
+                    <td>{{ customer.name }}</td>
+                    <td>{{ customer.email }}</td>
+                    <td>{{ customer.number }}</td>
+                    <td>{{ customer.companyName }}</td>
 
-
-        </tr>
-    </tbody>
-</table>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
